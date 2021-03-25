@@ -1,11 +1,12 @@
+import React from 'react';
 import './index.css';
 
 function App() {
   return (
-     <div className="container-md mx-auto">
-      <header className="flex items-center justify-between py-2 px-4 md:py-4 md:px-6 bg-white shadow-lg">
+     <div className="container-md mx-auto sm:w-10/12  md:w-8/12">
+      <header className="flex items-center justify-between py-2 px-4 md:py-4 md:px-6 bg-white">
         <div> 
-          <a href="#">
+          <a href="/">
           <h2 className="font-mono font-bold text-3xl">Logo</h2></a>
         </div>
         <div className="sm:hidden">
@@ -20,18 +21,26 @@ function App() {
         </button>
         </div>
         <div className="hidden sm:block">
-          <a href="#" className="text-gray-800 hover:bg-indigo-200 focus:text-indigo-600 py-1 px-2 ml-4 rounded">Register</a>
-          <a href="#" className="text-gray-800 hover:bg-indigo-200 focus:text-indigo-600 py-1 px-2 ml-4 rounded">Login</a>
+          <a href="/" className="text-gray-800 hover:bg-indigo-200 focus:text-indigo-600 py-1 px-2 ml-4 rounded">Register</a>
+          <a href="/" className="text-gray-800 hover:bg-indigo-200 focus:text-indigo-600 py-1 px-2 ml-4 rounded">Login</a>
         </div>
        </header>
-       <div className="container-lg mt-20 mx-auto">
-         <div className="text-center">
+       <div className=" md:flex justify-center items-center bg-white container-lg mt-20 mx-auto">
+         <div className="text-center md:w-6/12">
            <h3 className="text-semibold text-4xl text-gray-900">Build the <span className="text-indigo-600">future</span></h3>
-         </div>
-         <div>
-         <p className="text-gray-500 mt-10 text-center px-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-         </div>
+          
+          <div>
+          <p className="text-gray-500 mt-10 text-center px-8 sm:text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+            <div className="flex justify-center text-center mt-10">
+            <button type="button" className="btn bg-black text-gray-100 mr-1">Get started</button>
+            <button type="button" className="btn bg-gray-200 text-black ml-1">Learn more</button>
+          </div>
+          </div>
+          <div className="h-full hidden md:block md:w-6/12 bg-white">
+            <img className="h-80 md:w-full" src="/Image.png" alt="close up of computer"/>
 
+          </div>
        </div>
     </div>
 
