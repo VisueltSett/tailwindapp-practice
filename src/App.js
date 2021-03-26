@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/tailwind.css';
+import './styles/index.css';
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
           </div>
         </nav>
       </header>
-      <div className=" lg:flex justify-center items-center bg-white container-lg mt-20 mx-auto">
+      <div className=" lg:flex justify-center items-center bg-white container-lg mt-20lg:mt-10 mx-auto">
         <div className="text-center lg:w-1/3">
           <div className="flex-column">
             <h3 className="text-semibold text-4xl text-gray-900">Build the <span className="text-indigo-600">future</span></h3>
@@ -35,7 +35,7 @@ function App() {
            </div>
         </div>
         <div className="h-full hidden lg:block lg:w-2/3 bg-white">
-          <img className="w-7/12 min-h-full object-center" src="/img/hero-image-tailwindapp_500x539.jpg" alt="close up of computer"/>
+          <img className="w-full object-center" src="/images/hero-image-tailwindapp_500x539.jpg" alt="close up of computer"/>
         </div>
        </div>
     </body>
